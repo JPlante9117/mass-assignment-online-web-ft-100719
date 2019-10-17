@@ -3,4 +3,5 @@ class Person
   
   def initialize(attribute_hash)
     attribute_hash.each { |key, value| self.send("#{key}=", value) }
+  end
 end
